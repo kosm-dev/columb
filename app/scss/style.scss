@@ -4,4 +4,102 @@
 @import "libs";
 @import "global";
 
+// header
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: transparent;
+  padding-top: 20px;
+  &__inner {
+    display: flex;
+  }
+  &__nav-box {
+    display: flex;
+    margin: 0 auto;
+  }
+  &__menu {
+  }
+  &__logo {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+
+  // &__btn {
+  //   display: block;
+  //   background-color: transparent;
+  //   border: none;
+  //   cursor: pointer;
+  //   .header__btn-line {
+  //     position: relative;
+  //     display: inline-block;
+  //     display: flex;
+  //     justify-content: center;
+  //     width: 38px;
+  //     height: 2px;
+  //     background-color: #fff;
+  //     &::after,
+  //     &::before {
+  //       content: "";
+  //       position: absolute;
+  //       width: 38px;
+  //       height: 2px;
+  //       background-color: #fff;
+  //     }
+  //     &::after {
+  //       top: 7px;
+  //     }
+  //     &::before {
+  //       bottom: 7px;
+  //     }
+  //   }
+  // }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item + .menu__list-item {
+    margin-left: 75px;
+  }
+  &__list-link {
+    display: inline-block;
+    padding: 27px 0;
+    color: #fff;
+  }
+
+  &__btn {
+    display: block;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  &__btn::after,
+  &__btn:before {
+    content: "";
+    display: block;
+    width: 38px;
+    height: 2px;
+    margin-bottom: 7px;
+    background-color: #fff;
+  }
+  &__btn-line {
+    display: block;
+    width: 38px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 7px;
+  }
+}
+.logo {
+  &__img {
+    max-height: 76px;
+  }
+}
+
 @import "media";
