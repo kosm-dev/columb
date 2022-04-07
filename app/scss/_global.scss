@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  @extend %roboto-400;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 21px;
+  $default: #2b2b29;
+  background-color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+
+.container{
+  width: 100%;
+  max-width: 1330px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
