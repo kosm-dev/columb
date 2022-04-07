@@ -9,7 +9,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   $default: #2b2b29;
-  background-color: #ccc;
+  background-color: #fff;
 }
 
 .wrapper {
@@ -26,10 +26,21 @@ body {
   flex: 0 0 auto;
 }
 
-
-.container{
+.container {
   width: 100%;
   max-width: 1330px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.button {
+  min-width: 173px;
+  padding: 20px 34px;
+  display: inline-block;
+  @extend %roboto-400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  background-color: $accent;
 }

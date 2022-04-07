@@ -20,42 +20,11 @@
     display: flex;
     margin: 0 auto;
   }
-  &__menu {
-  }
+
   &__logo {
     margin-left: 75px;
     margin-right: 75px;
   }
-
-  // &__btn {
-  //   display: block;
-  //   background-color: transparent;
-  //   border: none;
-  //   cursor: pointer;
-  //   .header__btn-line {
-  //     position: relative;
-  //     display: inline-block;
-  //     display: flex;
-  //     justify-content: center;
-  //     width: 38px;
-  //     height: 2px;
-  //     background-color: #fff;
-  //     &::after,
-  //     &::before {
-  //       content: "";
-  //       position: absolute;
-  //       width: 38px;
-  //       height: 2px;
-  //       background-color: #fff;
-  //     }
-  //     &::after {
-  //       top: 7px;
-  //     }
-  //     &::before {
-  //       bottom: 7px;
-  //     }
-  //   }
-  // }
 }
 
 .menu {
@@ -99,6 +68,40 @@
 .logo {
   &__img {
     max-height: 76px;
+  }
+}
+
+.top {
+  position: relative;
+  height: 100vh;
+  min-height: 515px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  &__inner {
+  }
+  &__title {
+    width: 100%;
+    max-width: 916px;
+    margin-bottom: 40px;
+    @extend %open-700;
+    font-size: 43px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  &__subtitle {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 498px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+  &__btn {
   }
 }
 
