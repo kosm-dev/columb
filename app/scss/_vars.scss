@@ -5,6 +5,17 @@ $default2: #c2cdd1;
 
 $accent: #e2510e;
 
+// 
+
+%checkbox-hidden,
+%radio-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 // fonts
 %open-400 {
   font-family: "OpenSans-Regular", sans-serif;
