@@ -44,3 +44,20 @@ body {
   color: #fff;
   background-color: $accent;
 }
+
+.title {
+  @extend %open-400;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #000;
+}
+
+.section {
+  &__hits {
+    padding: 100px 0;
+  }
+  &__benefits {
+    padding: 100px 0;
+  }
+}

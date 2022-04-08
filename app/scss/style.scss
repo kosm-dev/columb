@@ -81,11 +81,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  &__inner {
-  }
+  background-color: $default;
+  
   &__title {
     width: 100%;
     max-width: 916px;
+    margin-top: 80px;
     margin-bottom: 40px;
     @extend %open-700;
     font-size: 43px;
@@ -101,7 +102,132 @@
     line-height: 28px;
     color: #ffffff;
   }
-  &__btn {
+}
+
+// hits
+
+.hits {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.hit {
+  width: 100%;
+  max-width: 420px;
+  &__img-box {
+    display: block;
+    position: relative;
+    max-width: 420px;
+    max-height: 293px;
+    overflow: hidden;
+  }
+  &__img-box::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/icons/heart.svg");
+    background-repeat: no-repeat;
+  }
+  &__img {
+    object-fit: cover;
+  }
+
+  &__wrapper {
+    background-color: $default;
+    padding: 40px 42px;
+    text-align: center;
+  }
+  &__content {
+    margin-bottom: 30px;
+  }
+  &__title {
+    margin-bottom: 30px;
+    @extend %open-400;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__description {
+    height: 42px;
+    font-size: 18px;
+    line-height: 21px;
+    color: $default2;
+    overflow: hidden;
+    text-align: start;
+  }
+  &__spec {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  &__info-box {
+    display: flex;
+    font-size: 18px;
+    line-height: 21px;
+    color: $default2;
+    text-align: start;
+  }
+  &__info-name {
+    margin-right: 30px;
+    width: 89px;
+    @extend %roboto-300;
+    overflow-x: hidden;
+  }
+  &__info-value {
+    margin-right: 40px;
+    width: 79px;
+    @extend %roboto-500;
+    overflow-x: hidden;
+  }
+}
+.jq-ry-container {
+  padding: 0;
+}
+
+.benefits {
+  &__title {
+    width: 100%;
+    max-width: 753px;
+    margin: 0 auto 70px;
+  }
+  &__wrap {
+    position: relative;
+    max-height: 1032px;
+  }
+  &__decor {
+    position: absolute;
+    right: 138px;
+    z-index: -1;
+  }
+  
+  &__item {
+    margin-bottom: 50px;
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+  &__item:nth-child(even) {
+    margin-left: auto;
+  }
+}
+
+.benefit {
+  width: 100%;
+  max-width: 530px;
+  &__title {
+    margin-bottom: 30px;
+    @extend %roboto-500;
+    font-size: 24px;
+    line-height: 28px;
+    color: $accent;
+  }
+  &__box p:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
