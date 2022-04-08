@@ -221,10 +221,6 @@
   max-width: 530px;
   &__title {
     margin-bottom: 30px;
-    @extend %roboto-500;
-    font-size: 24px;
-    line-height: 28px;
-    color: $accent;
   }
   &__box p:not(:last-child) {
     margin-bottom: 10px;
@@ -313,6 +309,103 @@
   height: 16px;
   margin-left: -30px;
   background-color: #fff;
+}
+
+// about
+
+.about {
+  min-height: 534px;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: left top;
+  &__inner {
+  }
+  &__box {
+    margin-left: auto;
+    width: 100%;
+    max-width: 600px;
+  }
+  &__title {
+    margin-bottom: 70px;
+    text-align: start;
+  }
+  &__subtitle {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 500px;
+  }
+  &__wrap {
+  }
+  &__wrap p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+// road
+.road {
+  &__inner {
+  }
+  &__title {
+    margin-bottom: 70px;
+  }
+  &__list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 70px 60px;
+
+    list-style: none;
+    counter-reset: my-counter;
+  }
+}
+
+.road-item {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  counter-increment: my-counter;
+  padding-top: 120px;
+  &__num {
+    position: relative;
+  }
+  &__num::after {
+    content: "/";
+    position: absolute;
+    top: -130px;
+    @extend %open-400;
+    font-size: 90px;
+    line-height: 82px;
+    color: $accent;
+  }
+  &__num::before{
+    content: ".";
+    position: absolute;
+    top: -130px;
+    left: 105px;
+    @extend %open-400;
+    font-size: 90px;
+    line-height: 82px;
+    color: $accent;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text p:not(:last-child){
+    margin-bottom: 10px;
+  }
+}
+
+.road-item::before {
+  content: "0" counter(my-counter);
+  position: absolute;
+  top: 0;
+  left: 42px;
+  @extend %open-400;
+  font-size: 60px;
+  line-height: 82px;
+  color: #808684;
+}
+.road-item:nth-child(1n+10)::before {
+  content: "" counter(my-counter);
 }
 
 @import "media";

@@ -55,6 +55,13 @@ body {
   color: #000;
 }
 
+.subtitle {
+  @extend %roboto-500;
+  font-size: 24px;
+  line-height: 28px;
+  color: $accent;
+}
+
 .section {
   &__hits {
     padding: 100px 0;
@@ -64,5 +71,10 @@ body {
   }
   &__personal {
     margin: 100px 0;
+  }
+  &__about {
+    margin: 200px 0 100px;
+  }
+  &__road {
   }
 }
