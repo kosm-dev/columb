@@ -318,8 +318,7 @@
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: left top;
-  &__inner {
-  }
+
   &__box {
     margin-left: auto;
     width: 100%;
@@ -334,16 +333,13 @@
     width: 100%;
     max-width: 500px;
   }
-  &__wrap {
-  }
+
   &__wrap p:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 // road
 .road {
-  &__inner {
-  }
   &__title {
     margin-bottom: 70px;
   }
@@ -376,7 +372,7 @@
     line-height: 82px;
     color: $accent;
   }
-  &__num::before{
+  &__num::before {
     content: ".";
     position: absolute;
     top: -130px;
@@ -389,11 +385,10 @@
   &__title {
     margin-bottom: 20px;
   }
-  &__text p:not(:last-child){
+  &__text p:not(:last-child) {
     margin-bottom: 10px;
   }
 }
-
 .road-item::before {
   content: "0" counter(my-counter);
   position: absolute;
@@ -404,8 +399,89 @@
   line-height: 82px;
   color: #808684;
 }
-.road-item:nth-child(1n+10)::before {
+.road-item:nth-child(1n + 10)::before {
   content: "" counter(my-counter);
+}
+
+// price
+
+.price {
+  min-height: 948px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  &__inner {
+    padding: 100px 0;
+  }
+  &__form {
+    margin-left: auto;
+    width: 100%;
+    max-width: 530px;
+    padding: 70px 50px;
+    background-color: rgba(#fff, 0.4);
+    text-align: center;
+  }
+  &__form-title {
+    margin-bottom: 40px;
+  }
+  &__form-subtitle {
+    margin-bottom: 40px;
+    @extend %roboto-400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: $default;
+  }
+  &__form-btn {
+    margin-top: 20px;
+  }
+  .choices {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .choices__inner {
+    background-color: #fff;
+    padding: 18px 40px 18px 20px;
+    border: none;
+    border-radius: 0;
+    min-height: auto;
+    height: 56px;
+    @extend %roboto-400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #808684;
+  }
+
+  .choices__placeholder {
+    opacity: 1;
+  }
+  .choices__list--single {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    text-align: start;
+  }
+  .choices__list--dropdown,
+  .choices__list[aria-expanded] {
+    text-align: start;
+  }
+
+  .choices::after {
+    content: "";
+    height: 10px;
+    width: 15px;
+    background-image: url("../images/icons/arrow.svg");
+    background-repeat: no-repeat;
+    border-style: none;
+    border-color: none;
+    border-width: 0;
+    position: absolute;
+    right: 21px;
+    top: 29px;
+    margin-top: 0;
+    pointer-events: none;
+  }
+  
 }
 
 @import "media";

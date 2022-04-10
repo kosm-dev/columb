@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "browser-sync": "^2.27.4",
+    "choices.js": "^10.1.0",
     "rateyo": "^2.3.2"
   }
 }
