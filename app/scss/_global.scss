@@ -4,6 +4,8 @@ body {
 }
 
 body {
+  min-width: 320px;
+  overflow-x: hidden;
   @extend %roboto-400;
   font-family: "Roboto";
   font-size: 18px;
@@ -77,5 +79,8 @@ body {
   }
   &__road {
     margin: 200px 0 100px;
+  }
+  &__reviews{
+    padding: 100px 0;
   }
 }

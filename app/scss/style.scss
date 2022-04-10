@@ -481,7 +481,135 @@
     margin-top: 0;
     pointer-events: none;
   }
-  
 }
 
+// reviews
+
+.reviews {
+  &__slider {
+    position: relative;
+    overflow-x: hidden;
+  }
+  &__slider-box {
+    display: flex;
+  }
+  &__slider-img {
+    min-height: 485px;
+    margin-right: 24px;
+  }
+  &__slider-content {
+    width: 100%;
+    max-width: 530px;
+    max-height: 455px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+  }
+  &__slider-title {
+    margin-bottom: 70px;
+  }
+  &__slider-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__slider-car {
+    margin-bottom: 10px;
+    @extend %roboto-500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+  }
+  &__slider-rate {
+    margin-bottom: 35px;
+  }
+  &__slider-desr {
+    margin-bottom: 20px;
+  }
+  &__slider-author {
+    position: relative;
+  }
+  &__slider-author::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background-color: $accent;
+    border-radius: 50%;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 460px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .swiper-button-next {
+    right: 210px;
+    background-image: url("../images/icons/arrow-right.svg");
+  }
+  .swiper-button-prev {
+    left: 970px;
+
+    background-image: url("../images/icons/arrow-left.svg");
+  }
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    left: 380px;
+    width: 100%;
+    z-index: -1;
+  }
+  .swiper-pagination-total,
+  .swiper-pagination-current {
+    @extend %roboto-400;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+// footer
+
+.footer {
+  &__inner {
+  }
+  &__nav {
+  }
+  &__logo {
+  }
+  &__list {
+  }
+  &__list-item {
+  }
+  &__list-link {
+  }
+  &__address {
+  }
+  &__address-title {
+  }
+  &__address-items {
+  }
+  &__address-item {
+  }
+  &__address-city {
+  }
+  &__address-street {
+  }
+  &__partners {
+  }
+  &__partners-item {
+  }
+}
 @import "media";
