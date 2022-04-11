@@ -583,31 +583,56 @@
 // footer
 
 .footer {
+  padding: 100px 0;
+  background-color: $default;
   &__inner {
+    display: flex;
   }
   &__nav {
+    width: 182px;
+    margin-right: 145px;
   }
   &__logo {
+    display: inline-block;
+    margin-bottom: 50px;
   }
   &__list {
   }
   &__list-item {
+    margin-bottom: 10px;
   }
   &__list-link {
+    color: #fff;
   }
   &__address {
+    width: 100%;
+    max-width: 498px;
   }
   &__address-title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
   }
   &__address-items {
   }
   &__address-item {
+    color: #fff;
+  }
+  &__address-item:not(:last-child) {
+    margin-bottom: 30px;
   }
   &__address-city {
+    @extend %open-700;
   }
   &__address-street {
   }
   &__partners {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 275px;
   }
   &__partners-item {
   }
