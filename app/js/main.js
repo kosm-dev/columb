@@ -1,5 +1,4 @@
 $(function () {
-
   $(".star").rateYo({
     starWidth: "15px",
     normalFill: "transparent",
@@ -20,36 +19,58 @@ $(function () {
 
   multiSelect();
 
+  // слайдер
 
-
-
-  let swiper = new Swiper('.reviews__slider', {
+  const swiper = new Swiper('.swiper', {
+    loop: true,
     slidesPerView: 1,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+    autoplay: {
+      delay: 2000
     },
     pagination: {
       el: '.swiper-pagination',
-      type: 'fraction'
+      type: 'fraction',
     },
-    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
 
+
+  // смена цвета шапки
+
+  $(window).scroll(function () {
+    $('.header').toggleClass('header--scroll', $(this).scrollTop() > 0);
+  });
+
+  const menuBtn = document.querySelector('.menu__btn'),
+    menu = document.querySelector('.mobile__menu'),
+    header = document.querySelector('.header'),
+    body = document.querySelector('body');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('mobile__menu--active');
+    header.classList.toggle('header--active');
+    body.classList.toggle('lock');
   });
 
 
 
+  // wow
 
-
-
-
-
-
-
-
-
-
-
-
+  wow = new WOW(
+    {
+      boxClass: 'wow',      // default
+      animateClass: 'animate__animated',
+      offset: 0,          // default
+      mobile: true,       // default
+      live: true        // default
+    }
+  )
+  wow.init();
 
 });
+
+

@@ -37,6 +37,7 @@ function scripts() {
     'node_modules/rateyo/src/jquery.rateyo.js',
     'node_modules/choices.js/public/assets/scripts/choices.js',
     'node_modules/swiper/swiper-bundle.js',
+    'node_modules/wowjs/dist/wow.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))

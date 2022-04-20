@@ -18,8 +18,8 @@
         <div class="header__inner">
 
           <div class="header__nav-box">
-            <nav class="header__menu menu">
-              <ul class="menu__list">
+            <nav class="header__menu header__menu-top menu">
+              <ul class="menu__list ">
                 <li class="menu__list-item">
                   <a class="menu__list-link" href="#">
                     Про нас
@@ -50,6 +50,33 @@
                 </li>
               </ul>
             </nav>
+
+            <nav class="mobile__menu">
+              <ul class="mobile__list">
+                <li class="mobile__list-item">
+                  <a class="mobile__list-link" href="#">
+                    Про нас
+                  </a>
+                </li>
+                <li class="mobile__list-item">
+                  <a class="mobile__list-link" href="#">
+                    Переваги
+                  </a>
+                </li>
+                <li class="mobile__list-item">
+                  <a class="mobile__list-link" href="#">
+                    Відгуки
+                  </a>
+                </li>
+                <li class="mobile__list-item">
+                  <a class="mobile__list-link" href="#">
+                    Акції
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+
           </div>
 
 
@@ -63,28 +90,28 @@
 
     <main class="main">
 
-      <section class="top" style="background-image: url('images/bg.jpg')">
+      <section id="top" class="top" style="background-image: url('images/bg.jpg')">
         <div class="container">
           <div class="top__inner">
-            <h1 class="top__title">
+            <h1 class="top__title wow animate__backInDown">
               КУПУЙ АВТО IЗ США НА 40% ДЕШЕВШЕ, НІЖ НА Українському РИНКУ!
             </h1>
-            <p class="top__subtitle">
+            <p class="top__subtitle wow animate__backInLeft" data-wow-delay="1s">
               Ми зв'яжемося з вами найближчим часом, щоб допомогти обрати і придбати машину з максимальною вигодою!
             </p>
-            <a class="top__btn button" href="#">
+            <a class="top__btn button wow animate__backInUp" href="#" data-wow-delay="1s">
               Придбати зараз
             </a>
           </div>
         </div>
       </section>
 
-      <section class="hits section__hits">
-        <div class="container">
+      <section id="hits" class="hits section__hits">
+        <div class="hits__container container">
           <div class="hits__inner">
 
 
-            <div class="hit">
+            <div class="hits__item hit wow animate__fadeIn" data-wow-delay="0.5s">
               <a class="hit__img-box" href="#">
                 <img class="hit__img" src="images/hits/hits-1.jpg" alt="Acura">
               </a>
@@ -133,7 +160,7 @@
 
 
             </div>
-            <div class="hit">
+            <div class="hits__item hit wow animate__fadeIn" data-wow-delay="1s">
               <a class="hit__img-box" href="#">
                 <img class="hit__img" src="images/hits/hits-2.jpg" alt="Mazda">
               </a>
@@ -182,7 +209,7 @@
 
 
             </div>
-            <div class="hit">
+            <div class="hits__item hit wow animate__fadeIn" data-wow-delay="1.5s">
               <a class="hit__img-box" href="#">
                 <img class="hit__img" src="images/hits/hits-3.jpg" alt="Skoda">
               </a>
@@ -237,10 +264,10 @@
       </section>
 
 
-      <section class="benefits section__benefits">
+      <section id="benefits" class="benefits section__benefits">
         <div class="container">
           <div class="benefits__inner">
-            <h3 class="benefits__title title">
+            <h3 class="benefits__title title wow animate__fadeInDown">
               Нас обирають, тому що ми маємо переваги над іншими
             </h3>
 
@@ -265,7 +292,7 @@
               <div class="benefits__items">
 
 
-                <div class="benefits__item benefit">
+                <div class="benefits__item benefit wow animate__fadeInLeft" data-wow-delay="0.5s">
                   <h5 class="benefit__title subtitle">
                     Ретельний підбір і перевірка
                   </h5>
@@ -278,7 +305,7 @@
                   </div>
                 </div>
 
-                <div class="benefits__item benefit">
+                <div class="benefits__item benefit wow animate__fadeInRight" data-wow-delay="1s">
                   <h5 class="benefit__title subtitle">
                     Страховка
                   </h5>
@@ -293,7 +320,7 @@
                   </div>
                 </div>
 
-                <div class="benefits__item benefit">
+                <div class="benefits__item benefit wow animate__fadeInLeft" data-wow-delay="1.5s">
                   <h5 class="benefit__title subtitle">
                     Бізнес ліцензії на аукціонах
                   </h5>
@@ -308,7 +335,7 @@
                   </div>
                 </div>
 
-                <div class="benefits__item benefit">
+                <div class="benefits__item benefit wow animate__fadeInRight" data-wow-delay="1.5s">
                   <h5 class="benefit__title subtitle">
                     Підтримка 24/7
                   </h5>
@@ -322,7 +349,7 @@
                   </div>
                 </div>
 
-                <div class="benefits__item benefit">
+                <div class="benefits__item benefit wow animate__fadeInLeft" data-wow-delay="1.5s">
                   <h5 class="benefit__title subtitle">
                     Сім років роботи
                   </h5>
@@ -345,11 +372,11 @@
       </section>
 
 
-      <section class="personal section__personal" style="background-image: url('images/personal-bj.jpg')">
+      <section id="personal" class="personal section__personal" style="background-image: url('images/personal-bj.jpg')">
         <div class="container">
           <div class="personal__inner">
 
-            <form class="personal__form" action="#">
+            <form class="personal__form wow animate__backInUp" action="#">
               <h5 class="personal__form-title title">
                 Отримай персональну добірку прямо зараз!
               </h5>
@@ -376,10 +403,10 @@
         </div>
       </section>
 
-      <section class="about section__about" style="background-image: url('images/about-bg.jpg')">
-        <div class="container">
+      <section id="about" class="about section__about" style="background-image: url('images/about-bg.jpg')">
+        <div class="about__container container">
           <div class="about__inner">
-            <div class="about__box">
+            <div class="about__box wow animate__fadeInDownBig">
               <h5 class="about__title title">Детальніше про нашу компанію</h5>
               <p class="about__subtitle subtitle">
                 Автомобільні аукціони США, з яких ми доставляємо машини в Україну
@@ -404,7 +431,7 @@
         </div>
       </section>
 
-      <section class="road section__road">
+      <section id="road" class="road section__road">
         <div class="container">
           <div class="road__inner">
             <h5 class="road__title title">
@@ -413,7 +440,7 @@
 
             <ol class="road__list">
 
-              <li class="road-item">
+              <li class="road-item wow animate__bounceInLeft" data-wow-delay="0.5s">
                 <div class="road-item__num"></div>
 
                 <h6 class="road-item__title subtitle">
@@ -433,7 +460,7 @@
 
               </li>
 
-              <li class="road-item">
+              <li class="road-item wow animate__bounceInRight" data-wow-delay="0.5s">
                 <div class="road-item__num"></div>
 
                 <h6 class="road-item__title subtitle">
@@ -453,7 +480,7 @@
 
               </li>
 
-              <li class="road-item">
+              <li class="road-item wow animate__bounceInLeft" data-wow-delay="1s">
                 <div class="road-item__num"></div>
 
                 <h6 class="road-item__title subtitle">
@@ -475,7 +502,7 @@
               </li>
 
 
-              <li class="road-item">
+              <li class="road-item wow animate__bounceInRight" data-wow-delay="1s">
                 <div class="road-item__num"></div>
 
                 <h6 class="road-item__title subtitle">
@@ -496,7 +523,7 @@
 
               </li>
 
-              <li class="road-item">
+              <li class="road-item wow animate__bounceInLeft" data-wow-delay="1s">
                 <div class="road-item__num"></div>
 
                 <h6 class="road-item__title subtitle">
@@ -517,7 +544,7 @@
 
               </li>
 
-              <li class="road-item">
+              <li class="road-item wow animate__bounceInRight" data-wow-delay="1s">
                 <div class="road-item__num"></div>
 
                 <h6 class="road-item__title subtitle">
@@ -545,7 +572,7 @@
       </section>
 
 
-      <section class="price" style="background-image: url('images/price-bg.jpg')">
+      <section id="price" class="price" style="background-image: url('images/price-bg.jpg')">
         <div class="container">
           <div class="price__inner">
             <form class="price__form" action="#">
@@ -628,15 +655,17 @@
       </section>
 
 
-      <section class="reviews section__reviews">
+      <section id="reviews" class="reviews section__reviews">
         <div class="container">
           <div class="reviews__inner">
 
-            <div class="reviews__slider">
-
+            <div class="reviews__slider swiper">
               <div class="swiper-wrapper">
-                <div class="reviews__slider-item swiper-slide">
 
+                <div class="swiper-slide">
+                  <h5 class="reviews__slider-title--mobile title">
+                    Відгуки про нашу компанію
+                  </h5>
                   <div class="reviews__slider-box">
 
                     <div class="reviews__slider-img">
@@ -671,8 +700,10 @@
                   </div>
 
                 </div>
-                <div class="reviews__slider-item swiper-slide">
-
+                <div class="swiper-slide">
+                  <h5 class="reviews__slider-title--mobile title">
+                    Відгуки про нашу компанію
+                  </h5>
                   <div class="reviews__slider-box">
 
                     <div class="reviews__slider-img">
@@ -707,8 +738,10 @@
                   </div>
 
                 </div>
-                <div class="reviews__slider-item swiper-slide">
-
+                <div class="swiper-slide">
+                  <h5 class="reviews__slider-title--mobile title">
+                    Відгуки про нашу компанію
+                  </h5>
                   <div class="reviews__slider-box">
 
                     <div class="reviews__slider-img">
@@ -743,21 +776,23 @@
                   </div>
 
                 </div>
+
               </div>
               <div class="swiper-pagination"></div>
+
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
 
             </div>
 
+
           </div>
         </div>
       </section>
 
-
-
-
     </main>
+
+
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
@@ -887,6 +922,7 @@
         </div>
       </div>
     </footer>
+
   </div>
 
   <script src="js/main.min.js"></script>

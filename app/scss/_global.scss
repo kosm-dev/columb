@@ -3,7 +3,23 @@ body {
   height: 100%;
 }
 
+/* scrollbar style */
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+  border: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $accent;
+}
+
 body {
+  position: relative;
   min-width: 320px;
   overflow-x: hidden;
   @extend %roboto-400;
@@ -14,6 +30,9 @@ body {
   background-color: #fff;
 }
 
+.lock{
+  overflow: hidden;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -80,7 +99,68 @@ body {
   &__road {
     margin: 200px 0 100px;
   }
-  &__reviews{
+  &__reviews {
     padding: 100px 0;
+  }
+}
+
+@media (max-width: 1400px) {
+  .section__hits {
+    padding: 50px 0;
+  }
+  .section__benefits {
+    padding: 50px 0;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    color: #e2510e;
+  }
+  // personal
+
+  .section__personal {
+    margin: 50px 0;
+  }
+  .section__about {
+    margin: 100px 0 100px;
+  }
+  .section__road {
+    margin: 100px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    color: #e2510e;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .section__about {
+    margin: 50px 0 50px;
+  }
+  .section__road {
+    margin: 50px 0 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section__benefits {
+    margin-bottom: 50px;
   }
 }
